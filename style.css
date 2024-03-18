@@ -16,9 +16,23 @@
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --primary-accent: #0a2540;
+  --blue-1: #00d4ff;
+  --bg-white: #fff;
+  --bg-light: #f7f9fc;
+
+  /* SPACING */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
 }
 body {
   font-family: var(--body-font);
+  color: var(--text-dark);
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: var(--spacing-sm) 0 0 0;
 }
 h1 {
   font-family: var(--heading-font);
