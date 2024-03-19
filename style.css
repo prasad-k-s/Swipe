@@ -61,13 +61,18 @@ h1 {
 }
 
 h2 {
-  font-family: var(--heading-font);
+  /* font-family: var(--heading-font);
   font-weight: 500;
   font-size: var(--h2-size);
   margin: 0;
   width: 100%;
   letter-spacing: -0.25px;
-  line-height: var(--h2-height);
+  line-height: var(--h2-height); */
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: var(--h3-size);
+  margin: 0;
+  width: 100%;
 }
 h3 {
   font-family: var(--heading-font);
@@ -213,6 +218,7 @@ p {
   width: 100%;
   max-width: var(--standard-width);
   padding: 0 var(--spacing-md);
+  background-color: magenta;
 }
 .menu {
   display: flex;
@@ -255,11 +261,14 @@ main {
   max-width: 480px;
 }
 .hero .hero-phone-container {
+  display: flex;
   height: 564px;
+  align-items: end;
+  justify-content: end;
 }
 .hero-phone {
   height: 628px;
-  transform: translate(265px, -32px);
+  transform: translateX(32px);
 }
 
 /* PARTNERS SECTION */
@@ -274,4 +283,20 @@ main {
 .parterns-grid img {
   height: 60px;
   place-self: center;
+}
+
+/* UNIFIED PLATFORM */
+.unified-platform-section {
+  padding: var(--spacing-xl) 0;
+}
+.unified-platform-section h2 {
+  width: 50%;
+  margin-bottom: var(--spacing-md);
+}
+.unified-platform-section .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0;
+}
+.unified-platform-section .primary-button:hover {
+  background-color: var(--primary-accent);
 }
