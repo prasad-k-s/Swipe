@@ -37,6 +37,14 @@
   --standard-width: 1144px;
 
   --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+
+  --primary-gradient: linear-gradient(
+    101.33deg,
+    #08209a 0.76%,
+    #6563ff 33.33%,
+    #36c5f0 76.92%,
+    #83e2ff 96.96%
+  );
 }
 body {
   font-family: var(--body-font);
@@ -438,6 +446,8 @@ main {
   display: flex;
   justify-content: center;
   color: var(--text-light);
+  position: relative;
+  padding: calc(var(--spacing-xl) * 3) 0;
 }
 
 .global-section a {
@@ -462,4 +472,88 @@ main {
   border-left: 2px solid var(--blue-1);
   padding: 0 0 0 var(--spacing-sm);
   line-height: 28px;
+}
+#globe {
+  max-width: 650px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
+  right: 2.5%;
+}
+/* VIRTUAL EVENTS SECTION */
+
+.virtual-events-section {
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--spacing-xl) * 2) 0;
+}
+.virtual-events-section .primary-button {
+  background-color: var(--purple-1);
+  margin-top: var(--spacing-md);
+}
+.virtual-events-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+.swipe-sessions-card {
+  width: 540px;
+  height: 446px;
+  box-shadow: var(--standard-box-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.swipe-sessions-card .card-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.virtual-events-section .col-left {
+  height: 446px;
+  padding: 0 var(--spacing-xl) 0 0;
+}
+.swipe-sessions-card .card-top::before {
+  content: "";
+  background-color: maroon;
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  transform: skewY(-5deg);
+  top: -40%;
+  background: var(--primary-gradient);
+  z-index: 1;
+}
+#sessions-logo {
+  z-index: 2;
+  width: 338px;
+}
+.virtual-events-section .avatar {
+  position: absolute;
+  bottom: -70px;
+  left: var(--spacing-xl);
+  z-index: 3;
+  /* width: 140px;
+  height: 80px; */
+}
+.virtual-events-section .avatar img {
+  width: 80px;
+}
+.virtual-events-section .avatar img:nth-of-type(2) {
+  position: absolute;
+  left: 55px;
+}
+.virtual-events-section .card-bottom {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  padding: var(--spacing-xl);
+}
+.virtual-events-section .card-bottom .subtitle {
+  margin: var(--spacing-lg) 0 0 0;
+}
+.virtual-events-section .card-bottom .secondary-text {
+  color: var(--text-dark);
+  width: 50%;
+  font-weight: 700;
 }
