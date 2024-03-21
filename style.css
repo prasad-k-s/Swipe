@@ -364,7 +364,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: calc(var(--spacing-xl) * 3);
+  padding-bottom: calc(var(--spacing-xl) * 3);
   background-color: var(--bg-light);
 }
 .graphic-grid {
@@ -409,6 +409,7 @@ main {
   justify-content: center;
   position: relative;
   padding: calc(var(--spacing-xl) * 3) 0;
+  z-index: 1;
 }
 .integrations-section::before {
   content: "";
@@ -420,6 +421,16 @@ main {
   top: -32px;
   left: 0;
   z-index: -1;
+}
+.integrations-section::after {
+  content: "";
+  background-color: var(--bg-light);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 .integrations-section .card-container {
   display: flex;
