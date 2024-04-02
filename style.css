@@ -392,7 +392,6 @@ main {
   grid-area: phone;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
-  border-radius: 65px;
 }
 #dash {
   grid-area: dash;
@@ -706,11 +705,35 @@ main {
     padding: 0 var(--spacing-md);
   }
 }
+@media only screen and (max-width: 1022px) {
+  .integrations-section #api-code {
+    width: 90%;
+  }
+  .integrations-section #terminal-code {
+    width: 90%;
+  }
+}
 
 @media only screen and (max-width: 850px) {
   .parterns-grid img {
     width: 100%;
     height: auto;
+  }
+
+  .integrations-section .col-left {
+    width: 100%;
+  }
+  .integrations-section .col-right {
+    display: flex;
+
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .two-column {
+    flex-direction: column;
   }
 }
 
@@ -744,4 +767,14 @@ main {
   .unified-platform-section h2 {
     width: 100%;
   }
+  .integrations-section .col-right {
+    width: 80%;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
