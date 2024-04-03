@@ -709,6 +709,31 @@ main {
   .section-container {
     padding: 0 var(--spacing-md);
   }
+  .hero .hero-phone {
+    height: 100%;
+  }
+  .hero .hero-phone-container {
+    align-items: start;
+    justify-content: end;
+    height: 550px;
+    transform: translate(0, -70px);
+  }
+}
+
+@media only screen and (max-width: 1142px) {
+  .virtual-events-section .col-right {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  :root {
+    --h1-size: 78px;
+    --h1-height: 80px;
+  }
+  .parterns-grid {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 1022px) {
   .integrations-section #api-code {
@@ -718,18 +743,15 @@ main {
     width: 90%;
   }
 }
-@media only screen and (max-width: 1142px) {
-  .virtual-events-section .col-right {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+@media only screen and (max-width: 930px) {
+  .hero .hero-phone {
+    height: 100%;
   }
-}
-@media only screen and (max-width: 1142px) {
-  :root {
-    --h1-size: 78px;
-    --h1-height: 80px;
+  .hero .hero-phone-container {
+    align-items: start;
+    justify-content: end;
+    height: 550px;
+    transform: translate(0, -20px);
   }
 }
 @media only screen and (max-width: 850px) {
@@ -790,6 +812,18 @@ main {
   }
   .why-swipe-section {
     padding: var(--spacing-md) 0 calc(var(--spacing-xl) * 3) 0;
+  }
+  .hero .hero-phone {
+    height: 100%;
+  }
+  .hero .hero-phone-container {
+    align-items: start;
+    justify-content: end;
+    height: 500px;
+    transform: translate(0, -50px);
+  }
+  .parterns-grid {
+    margin: 0;
   }
 }
 
@@ -884,6 +918,9 @@ main {
   }
   .virtual-events-section {
     padding: calc(var(--spacing-sm) * 1) 0;
+  }
+  .parterns-grid {
+    margin: var(--spacing-xl) 0;
   }
 }
 /* MOBILE SIZE */
