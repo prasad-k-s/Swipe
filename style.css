@@ -771,6 +771,25 @@ main {
   .hero .two-column {
     flex-direction: row;
   }
+  .getting-started-section .col-left {
+    width: 100%;
+  }
+  .getting-started-section .col-right {
+    width: 100%;
+    margin-top: var(--spacing-lg);
+  }
+  .unified-platform-section .two-column {
+    flex-direction: row;
+  }
+  .virtual-events-section {
+    padding: calc(var(--spacing-sm) * 1) 0;
+  }
+  .integrations-section {
+    padding: calc(var(--spacing-xl) * 2) 0 calc(var(--spacing-xl) * 1) 0;
+  }
+  .why-swipe-section {
+    padding: var(--spacing-md) 0 calc(var(--spacing-xl) * 3) 0;
+  }
 }
 
 /* TABLET SIZE */
@@ -784,8 +803,14 @@ main {
   .unified-platform-section h2 {
     width: 100%;
   }
+  .integrations-section {
+    padding: calc(var(--spacing-xl) * 1) 0;
+  }
   .why-swipe-section .card-container {
     flex-wrap: wrap;
+  }
+  .why-swipe-section {
+    padding: var(--spacing-md) 0 var(--spacing-xl) 0;
   }
   .why-swipe-section .card-container .card {
     width: 50%;
@@ -850,6 +875,15 @@ main {
   main {
     margin: var(--spacing-lg) 0 0 0;
   }
+  .getting-started-section .col-left {
+    width: 100%;
+  }
+  .getting-started-section .col-right {
+    width: 100%;
+  }
+  .virtual-events-section {
+    padding: calc(var(--spacing-sm) * 1) 0;
+  }
 }
 /* MOBILE SIZE */
 @media only screen and (max-width: 550px) {
@@ -871,12 +905,24 @@ main {
   .parterns-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .unified-platform-section {
+    padding: var(--spacing-md) 0;
+  }
 
   .unified-platform-section h2 {
     width: 100%;
   }
+  .integrations-section {
+    padding: var(--spacing-lg) 0;
+  }
   .integrations-section .col-right {
     width: 80%;
+  }
+  .integrations-section::before {
+    height: 900px;
+  }
+  .why-swipe-section {
+    padding: var(--spacing-lg) 0;
   }
   .why-swipe-section .card-container .card {
     width: 100%;
@@ -885,12 +931,21 @@ main {
   .why-swipe-section .card-container .card .icon {
     height: 35px;
   }
+  .global-section {
+    padding: var(--spacing-xl) 0 0 0;
+  }
+  .global-section .card-container {
+    margin: var(--spacing-md) 0;
+  }
   .global-section .card-container .card {
     width: 100%;
     margin: var(--spacing-sm) 0;
   }
   #globe {
     opacity: 10%;
+  }
+  .virtual-events-section {
+    padding: var(--spacing-lg) 0;
   }
 
   .virtual-events-section .swipe-sessions-card {
@@ -902,6 +957,15 @@ main {
   }
   .virtual-events-section .swipe-sessions-card .card-top {
     height: 40%;
+  }
+  .virtual-events-section .col-left {
+    height: 325px;
+  }
+  .getting-started-section {
+    padding: 0 0 var(--spacing-xl) 0;
+  }
+  .graphic-section {
+    padding-bottom: calc(var(--spacing-xl) * 2);
   }
   #sessions-logo {
     width: 300px;
