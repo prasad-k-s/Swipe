@@ -384,6 +384,7 @@ main {
   grid-area: card;
   width: 100%;
   box-shadow: var(--standard-box-shadow);
+  border-radius: 20px;
 }
 #slack-invoice {
   grid-area: slack;
@@ -395,7 +396,7 @@ main {
 #phone {
   grid-area: phone;
   width: 100%;
-  box-shadow: var(--standard-box-shadow);
+  /* box-shadow: var(--standard-box-shadow); */
 }
 #dash {
   grid-area: dash;
