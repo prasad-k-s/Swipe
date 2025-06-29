@@ -202,3 +202,31 @@ p {
 .with-icon:hover > img {
   transform: translateX(0.4rem);
 }
+
+.section-container {
+  width: 100%;
+  max-width: var(--standard-width);
+}
+.two-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.two-column > .col-left {
+  width: 50%;
+  padding: 0 var(--spacing-md) 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.two-column > .col-right {
+  width: 50%;
+  padding: 0 0 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
