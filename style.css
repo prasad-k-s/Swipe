@@ -86,3 +86,38 @@
 .unified-platform-section .primary-button:hover {
   background-color: var(--primary-accent);
 }
+
+/* Graphic grid section  */
+.graphic-grid {
+  display: grid;
+  grid-template-areas:
+    "card slack slack"
+    "phone slack slack"
+    "phone dashboard dashboard";
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
+}
+
+#credit-card {
+  grid-area: card;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#slack-invoice {
+  grid-area: slack;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#phone {
+  grid-area: phone;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#dashboard {
+  grid-area: dashboard;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}

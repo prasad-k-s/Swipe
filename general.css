@@ -39,6 +39,8 @@
   --hero-paragraph: 48rem;
   --hero-phone-height: 62.8rem;
   --hero-phone-container-height: 56.4rem;
+
+  --standard-box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -63,7 +65,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: red;
+  background-color: var(--bg-white);
 }
 
 h1 {
