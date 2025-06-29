@@ -29,3 +29,44 @@
   padding-bottom: 2px;
   border-bottom: 1px solid var(--text-light);
 }
+
+/* Hero section  */
+.button-container {
+  display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+.button-container button:nth-of-type(2) {
+  color: var(--purple-2);
+}
+.hero p {
+  max-width: var(--hero-paragraph);
+}
+
+.hero .hero-phone-container {
+  height: 56.4rem;
+  height: var(--hero-phone-container-height);
+
+  align-items: flex-end;
+}
+
+.hero-phone {
+  height: var(--hero-phone-height);
+  transform: translate(5rem, -3.2rem);
+}
+/* Partners section  */
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: var(--spacing-xl) 0;
+
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+  height: 6rem;
+  place-self: center;
+}

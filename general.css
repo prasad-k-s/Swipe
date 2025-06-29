@@ -36,6 +36,9 @@
   --standard-width: 114.4rem;
   --nav-button: rgba(250, 250, 250, 0.25);
   --nav-button-hover: rgba(250, 250, 250, 0.5);
+  --hero-paragraph: 48rem;
+  --hero-phone-height: 62.8rem;
+  --hero-phone-container-height: 56.4rem;
 }
 
 * {
@@ -60,7 +63,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: rebeccapurple;
+  background-color: red;
 }
 
 h1 {
@@ -219,7 +222,7 @@ p {
   padding: 0 var(--spacing-md) 0 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 .two-column > .col-right {
@@ -227,6 +230,9 @@ p {
   padding: 0 0 0 var(--spacing-md);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+}
+.main {
+  margin: var(--spacing-xl) 0;
 }
