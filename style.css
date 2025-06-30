@@ -24,6 +24,7 @@
   margin: 0 var(--spacing-md);
   font-weight: bold;
   transition: all 0.3s;
+  font-size: var(--navbar-li-size);
 }
 .menu a:hover {
   padding-bottom: 2px;
@@ -31,6 +32,11 @@
 }
 
 /* Hero section  */
+.hero {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
 .button-container {
   display: flex;
   gap: var(--spacing-md);
@@ -56,6 +62,12 @@
 }
 /* Partners section  */
 
+.partners-section {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -74,6 +86,9 @@
 /* Unified platform section  */
 .unified-platform-section {
   padding: var(--spacing-xl) 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
 }
 .unified-platform-section h2 {
   width: 50%;
@@ -88,6 +103,11 @@
 }
 
 /* Graphic grid section  */
+.graphic-section {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
 .graphic-grid {
   display: grid;
   grid-template-areas:
@@ -128,6 +148,10 @@
   color: var(--text-light);
 
   background-color: var(--primary-accent);
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .integration-section .card-container {
@@ -158,4 +182,65 @@
 #terminal-code {
   max-width: 47rem;
   border-radius: 20px;
+}
+/* WHY SWIPE SECTION */
+.why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.why-swipe-section .card-container {
+  display: flex;
+  margin: var(--spacing-lg) 0;
+}
+
+.why-swipe-section .card-container .card {
+  width: 25%;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+
+.why-swipe-section .secondary-text {
+  color: var(--text-dark);
+}
+/* GLOBAL SECTION */
+.global-section {
+  background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--text-light);
+  position: relative;
+  padding: calc(var(--spacing-xl) * 3) 0;
+}
+.global-section a {
+  color: var(--blue-1);
+}
+.global-section a:hover {
+  color: var(--text-light);
+}
+.global-section .card-container {
+  display: flex;
+  margin-top: calc(var(--spacing-xl) * 2);
+}
+
+.global-section .card-container .card {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+
+.global-section .card-container .card h3 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 2.8rem;
+}
+#globe-img {
+  max-width: 54.4rem;
+  opacity: 0.25;
+  position: absolute;
+  top: 10%;
+  right: 0;
 }
